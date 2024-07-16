@@ -28,8 +28,8 @@ test("Ensure user is warned on entering invalid email OR no email address in ema
 })
 
 test("User is able to login with valid credentials", async({page})=>{
-    //test data objects
-    const validIds = {email: "harsha@snaptrude.com", password: "22222222", workspaceName: "harsha_staging's workspace"}
+    //test data objects please provide valie email address before testing
+    const validIds = {email: "Test@testmail.com", password: "test-password", workspaceName: "Enter your workspace name as shown in snaptrude dashboard"}
     const loginPage = new LoginPage(page);
 
     loginPage.login(validIds.email, validIds.password);

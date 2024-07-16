@@ -13,7 +13,9 @@ test("create new project", async({page})=>{
     const dashboardPage = new DashboardPage(page);
 
     await page.goto("https://staging.snaptru.de/login");
-    await loginPage.login("harsha@snaptrude.com", "22222222");
+
+    //provide test email address and password
+    await loginPage.login("test@testmail.com", "password");
 
     await page.waitForLoadState("networkidle");
 
