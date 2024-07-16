@@ -1,0 +1,7 @@
+{ 
+    //update the valid credentials field with valid test data and rename the file to testData.json for the code to work without any error, you can leave rest everything as is or change it as you see fit
+    "invalidCredentials" : {"email" : "testmail", "password" : "testpassword"},
+    "incorrectCredentials" : {"email": "test@testmail.com", "password": "12345678", "errorMessage": "User not foundSign Up"},
+    "validCredentials" : {"email" : "enter your email address", "password" : "Enter your password", "workspaceName": "Enter workspace name"},
+    "projectDetails" : {"name": "My First Automation Project", "unit": "Meter"}
+}
